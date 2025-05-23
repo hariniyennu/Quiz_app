@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: white;
+  min-height: 100vh;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto; /* center horizontally */
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+/* src/components/Header.css */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4f46e5;
+  color: white;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.auth-buttons .btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #4f46e5;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #e0e0e0;
+}

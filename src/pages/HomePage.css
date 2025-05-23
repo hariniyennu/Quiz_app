@@ -1,0 +1,71 @@
+/* General body background */
+body {
+  background: radial-gradient(circle at top left, #1f2937, #111827);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container for the whole page */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.homepage-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Quiz list layout */
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Individual quiz card */
+.quiz-card {
+  width: 280px;
+  min-height: 180px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* Title inside the card */
+.quiz-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+/* Description inside the card */
+.quiz-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
