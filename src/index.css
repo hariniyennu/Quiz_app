@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: radial-gradient(circle at top left, #1f2937, #111827);
-}
-
 
 /* Optional for smooth font look */
 html {

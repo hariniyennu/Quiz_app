@@ -1,26 +1,116 @@
+/* AuthPage.css */
 .auth-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   max-width: 400px;
-  margin: 100px auto;
-  padding: 2rem;
-  border: 1px solid #ccc;
+  padding: 2.5rem;
   border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
   text-align: center;
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-size: 1.8rem;
 }
 
 .auth-container input {
   width: 100%;
-  padding: 0.8rem;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  padding: 0.9rem;
+  margin: 0.7rem 0;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
 .auth-container button {
-  padding: 0.8rem 2rem;
-  background-color: #4f46e5;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #3498db;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #2980b9;
+}
+
+.auth-container button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-container label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem 0;
+  color: #34495e;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.auth-container label input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.auth-container p {
+  margin-top: 1.5rem;
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+.auth-container a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 1.8rem;
+  }
+  
+  .auth-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .auth-container input {
+    padding: 0.8rem;
+  }
 }

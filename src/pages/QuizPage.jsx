@@ -31,7 +31,6 @@ const QuizPage = () => {
   }
 };
 
-
   const handleNext = () => {
     setSelectedOption(null);
     setIsAnswered(false);
@@ -58,7 +57,6 @@ const QuizPage = () => {
     <div className="quiz-container">
       <h1 className="quiz-title">{quiz.title}</h1>
 
-      {/* Progress Bar */}
       {!showResult && (
         <>
           <div className="progress-text">
@@ -77,10 +75,12 @@ const QuizPage = () => {
 
       {showResult ? (
         <div className="result">
-          <p>Your score: {score} / {totalQuestions}</p>
-          <button className="restart-btn" onClick={handleRestart}>
-            Restart Quiz
-          </button>
+        <div className="res-container">
+            <p>Your score: {score} / {totalQuestions}</p>
+              <button className="restart-btn" onClick={handleRestart}>
+                Restart Quiz
+              </button>
+        </div>
         </div>
       ) : (
         <>

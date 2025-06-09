@@ -1,21 +1,18 @@
-/* General body background */
 body {
-  background: radial-gradient(circle at top left, #1f2937, #111827);
+  background: #1a6bb0;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Container for the whole page */
 .homepage-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   padding: 60px 20px;
   min-height: 100vh;
   box-sizing: border-box;
 }
 
-/* Title styling */
 .homepage-title {
   font-size: 2rem;
   font-weight: 700;
@@ -24,7 +21,6 @@ body {
   text-align: center;
 }
 
-/* Quiz list layout */
 .quiz-list {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +30,6 @@ body {
   width: 100%;
 }
 
-/* Individual quiz card */
 .quiz-card {
   width: 280px;
   min-height: 180px;
@@ -55,7 +50,6 @@ body {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
 }
 
-/* Title inside the card */
 .quiz-card h3 {
   font-size: 1.3rem;
   font-weight: 700;
@@ -63,7 +57,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Description inside the card */
 .quiz-card p {
   font-size: 0.95rem;
   color: #555;

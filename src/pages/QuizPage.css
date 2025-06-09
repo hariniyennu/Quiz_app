@@ -1,11 +1,13 @@
 .quiz-container {
+  height: 480px;
+  position: relative;
   max-width: 700px;
   margin: 50px auto;
-  background-color: #1f1f1f;
+  background-color: #ffff;
   padding: 30px;
   border-radius: 12px;
-  color: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: #2d3748;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .quiz-title {
@@ -31,12 +33,12 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
-  background-color: #1f2937;
+  background-color: #716f6f;
   color: white;
 }
 
 .option:hover {
-  background-color: #374151;
+  background-color: black ;
 }
 
 .option.selected {
@@ -54,18 +56,23 @@
 }
 
 .next-btn {
+  position: absolute;
+  right: 0;
   margin-top: 20px;
+  margin-right: 32px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #2196f3;
+  background-color: rgba(40, 39, 39);
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: transform 0.3s ease; 
 }
 
 .next-btn:hover {
-  background-color: #1976d2;
+  background-color: rgb(57, 52, 52);
+  transform: scale(1.05);
 }
 
 .result {
@@ -76,14 +83,14 @@
 .progress-text {
   font-size: 1rem;
   margin-bottom: 8px;
-  color: #d1d5db;
+  color: #2d3748;
 }
 
 .progress-bar {
   width: 100%;
   max-width: 500px;
   height: 10px;
-  background: #374151;
+  background: rgba(40, 39, 39, 0.224);
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -91,22 +98,32 @@
 
 .progress-fill {
   height: 100%;
-  background: #3b82f6;
+  background: #1f2937;
   transition: width 0.3s ease-in-out;
 }
+.result{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.restart-btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #10b981;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
 }
-
-.restart-btn:hover {
-  background: #059669;
+.res-container>button{
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color:  rgb(32, 31, 31);
+  color: white;
+  font-weight:600;
+  transition: transform 0.3s ease; 
+}
+.res-container>button:hover{
+  transform: scale(1.05);
+}
+.res-container>p{
+  font-weight: 600;
+  margin-bottom: 10px;
 }
